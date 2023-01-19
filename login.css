@@ -1,0 +1,133 @@
+body{
+    background-color: #ccc;
+}
+.login{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 1px 1px 10px 10px rgb(163, 161, 161);
+    overflow: hidden;
+    height: 78vh;
+    width: 70%;
+    margin: 50px auto;
+    border: none;
+    border-radius: 10px;
+    outline:none;
+    align-items: center;
+    z-index: 1;
+}
+
+form{
+    color: black;
+    background-color:white;
+    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    row-gap: 40px;
+}
+
+form h1{
+    font-size: 40px;
+}
+input{
+    /* width: 70%; */
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.login form > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: #333;
+    font-weight:900 ;
+    border-bottom: 1px solid #ccc;
+    margin: 5px 0px;
+    width: 80%;
+    padding:5px 20px;
+}
+
+.login form div:nth-child(n+8){
+    border: none;
+}
+
+:focus:not(select){
+    background-color: rgb(85, 79, 79);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+::placeholder{
+    color:rgb(190, 186, 186);
+    font-size: 13px;
+}
+.button{
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    border-radius: 50px;
+    width: 40%;
+    background-image: linear-gradient(to right, #870000, #190a05);
+    color:white;
+    font-weight: 700;
+}
+label{
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 900px;
+
+}
+
+
+ #second-slide{
+    width: 50%;
+    background-image: linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url('images/Scene-20.jpg');
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../Scene-20.jpg');
+    height: 100%;
+    padding:0;
+    border: none;
+}
+
+
+/* Media Queries */
+
+/* Contact */
+@media only screen and (max-width:769px) {
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .login form{
+        width: 100%;
+    }
+    form textarea{
+        width: 80%;
+    }
+}
+
+/* login page */
+@media only screen and (max-width:769px) {
+    #login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #login form{
+        width: 100%;
+    }
+    #login #second-slide{
+        display: none;
+    }
+   
+}
